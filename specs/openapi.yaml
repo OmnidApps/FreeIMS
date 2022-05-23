@@ -1,0 +1,18 @@
+openapi: "3.0.2"
+info:
+  title: Open Inventory Management API
+  version: "0.0.1"
+servers:
+  - url: http://localhost:5000/v1
+paths:
+  /test:
+    get:
+      responses:
+        "200":
+          description: OK
+          headers:
+            Access-Control-Allow-Origin: "*"
+          content:
+            text/plain:
+              schema:
+                type: string
